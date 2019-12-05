@@ -3,10 +3,7 @@
   <head>
     <style media="screen">
       .clear {
-      clear: both;
-      }
-      body {
-        background-color: #fbfbfb;
+        clear: both;
       }
       header {
         width: 1280px;
@@ -49,7 +46,7 @@
       }
       header {
         width: 1140px;
-        height: 0px;
+        height: 100px;
         margin: 0 auto;
         /* border: solid 1px red; */
       }
@@ -82,26 +79,10 @@
       #main_img {
         width: 100%;
         height: 600px;
-        background-image: url('main_img3.gif');
+        background-image: url('main_img.png');
         background-repeat: no-repeat;
         background-position: top center;
-        margin-top: 0px;
-      }
-      #main_img2 {
-        width: 100%;
-        height: 600px;
-        background-image: url('main_img.gif');
-        background-repeat: no-repeat;
-        background-position: top center;
-        margin-top: 0px;
-      }
-      #main_img3 {
-        width: 100%;
-        height: 600px;
-        background-image: url('main_img2.gif');
-        background-repeat: no-repeat;
-        background-position: top center;
-        margin-top: 0px;
+        margin-top: 20px;
       }
       li {
         list-style-type: none;
@@ -171,7 +152,7 @@
       footer {
         width: 100%;
         height: 150px;
-        margin-top: 0px;
+        margin-top: 100px;
         background-color: #ffd30d;
       }
       #footer_box {
@@ -213,32 +194,64 @@
       </div>
 
 
-      <nav id='menus'>
+        <nav id='menus'>
 
-        <div id='top_menu'>
+          <div id='top_menu'>
 
-        <a href="./hyunmin_p.html"><img src="myiconun.png" onmouseover="this.src='myicon.png';" onmouseout="this.src='myiconun.png';"></a><a href="https://www.facebook.com/landiajuve"><img src="fb.png" onmouseover="this.src='fbon.png';" onmouseout="this.src='fb.png';"></a><a href="https://www.instagram.com/iohmk/"><img src="insta.png" onmouseover="this.src='instaon.png';" onmouseout="this.src='insta.png';"></a>
+            <a href="./hyunmin_p.html"><img src="myiconun.png" onmouseover="this.src='myicon.png';" onmouseout="this.src='myiconun.png';"></a><a href="https://www.facebook.com/landiajuve"><img src="fb.png" onmouseover="this.src='fbon.png';" onmouseout="this.src='fb.png';"></a><a href="https://www.instagram.com/iohmk/"><img src="insta.png" onmouseover="this.src='instaon.png';" onmouseout="this.src='insta.png';"></a>
+            </div>
+
+
+          <ul id='main_menu'>
+            <li><a href="./hyunmin.html"><img src="menu1.png"></a></li>
+            <li><a href="./project.html"><img src="menu2.png"></a></li>
+            <li><a href="./artwork.html"><img src="menu3.png"></a></li>
+            <li><a href="./video.html"><img src="menu4.png"></a></li>
+            <li><a href="./contact.html"><img src="menu5.png"></a></li>
+          </ul>
+        </nav>
+
+
+
+
+      </header>
+
+
+
+      <section id='contents'>
+        <nav id='sub_menu'>
+          <ul>
+            <li><a href="./video.html">Replay Container</a></li>
+            <li><a href="./video_post.html">Post</a></li>
+            <li><a href="./video_dirty.html">LUSH:Dirty</a></li>
+            <li><a href="./video_dongdong.html">DONGDONG</a></li>
+            <li><a href="./video_fixyou.html">Fix You</a></li>
+          </ul>
+        </nav>
+
+
+        <div id='main_contents'>
+          <h3>LUSH: Dirty</h3>
+        <div id="figure">
+          <video width="960" height="540" autoplay controls loop poster="./dirtythumb.jpg">
+            <source src="./dirty.mp4" type="video/mp4">
+            <source src="./dirty.webm" type="video/webm">
+            <source src="./dirty.ogg" type="video/ogg">
+            </video>
+
+          </video>
+        </div>
+        <p><span style="font-weight: bold;">2019년 12월 제작한 LUSH DIRTY 제품 홍보영상입니다.</span></p>
+        <p>3DS MAX와 애프터이펙트를 이용하여 작업하였습니다.
+        <br>모델링과 애니메이션을 3DS MAX를 통해 작업하고
+        <br>후반 작업과 영상 렌더링은 애프터이펙트로 작업하였습니다.
+        <br>
+        <br>3DS MAX를 처음 배웠을땐 그저 막막하기만 했는데
+        <br>그래도 이정도 결과물을 냈다는 것에 스스로 뿌듯했습니다.</p>
         </div>
 
-
-        <ul id='main_menu'>
-          <li><a href="./hyunmin.html"><img src="menu1.png"></a></li>
-          <li><a href="./project.html"><img src="menu2.png"></a></li>
-          <li><a href="./artwork.html"><img src="menu3.png"></a></li>
-          <li><a href="./video.html"><img src="menu4.png"></a></li>
-          <li><a href="./contact.html"><img src="menu5.png"></a></li>
-        </ul>
-      </nav>
-
-
-    </header>
-
-    <section id='main_img'>
-    </section>
-    <section id='main_img3'>
-    </section>
-
-
+      </section>
+      <div class="clear"></div> <!-- float 속성 해제 -->
     <footer>
       <div id="footer_box">
         <div id="footer_logo">
@@ -251,6 +264,8 @@
         </ul>
       </div>
     </footer>
-
+    <div style="position: fixed; bottom: 5px; right: 5px;">
+    <a href="#menus"><img src="top.png" title="위로 가기"></a>
+    </div>
   </body>
 </html>

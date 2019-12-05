@@ -182,6 +182,14 @@
         font-weight: bold;
         text-decoration: none;
       }
+      table, tr, th, td{
+        border: solid 1px #ffd30d;
+        border-collapse: collapse;
+        padding: 20px;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        color: #000000;
+      }
     </style>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic&display=swap" rel="stylesheet">
@@ -226,19 +234,48 @@
 
 
         <div id='main_contents'>
-          <h3>서브메뉴1 타이틀</h3>
-          <p>내용을 입력할 곳입니다.</p>
-        <div id="figure">
-          <img src="lineup.png" alt="">
-        </div>
-        <p>내용을 입력할 곳입니다.</p>
-        <ul>
-          <li>내용을 입력할 곳입니다.</li>
-          <li>내용을 입력할 곳입니다.</li>
-          <li>내용을 입력할 곳입니다.</li>
-          <li>내용을 입력할 곳입니다.</li>
-          <li>내용을 입력할 곳입니다.</li>
-        </ul>
+          <p><span style="color: #303030; font-size: 18px; font-weight: bold;">그 어떤 상황에서도 여러분의 한마디 한마디에 귀기울이는 디자이너입니다.<br>
+             여러분이 추구하는 그 어떤 것이든, 이루어질 수 있도록 최선을 다하는 디자이너입니다.<br><br>
+             다양한 방향에서 생각할 줄 알고 작업할 줄 아는 멀티플레이어입니다.<br>
+             언제나 귀기울일 준비가 되어있습니다. 주저없이 연락해주세요.</span></p>
+          <br>
+          <br>
+          <p> <img src="./namecard.jpg" alt=""> </p>
+          <p> <img src="./contact.png" alt=""> </p>
+          <table align="center"border="3">
+         <tr>
+          <td> 이름 </td>
+          <td> <input type="text" name="writer" size="55"> </td>
+          <td> 연락처 </td>
+          <td> <input type="password" name="pw"> </td>
+         </tr>
+         <tr>
+          <td> 이메일 </td>
+          <td> <input type="text" name="email" size="39"> @
+          <select>
+           <option> naver.com </option>
+           <option> gmail.com </option>
+           <option> daum.net </option>
+           <option> hanmail.net </option>
+           <option> nate.com </option>
+           <option> 직접입력 </option>
+          </select> </td>
+          <td> <img src="./lock.png" width="30" alt=""> </td>
+          <td> <input type="radio" name="protect"> 공개  <input type="radio" name="protect"> 비공개</td>
+         </tr>
+         <tr>
+          <td> 제목 </td>
+          <td colspan="4"> <input type="text" size="98"> </td>
+         </tr>
+         <tr>
+          <td> 메시지 </td>
+          <td colspan="4"> <textarea cols="100" rows="20"></textarea> </td>
+         </tr>
+          </table>
+        <br>
+        <center>
+         <input type="submit" value="이메일로 보내기">
+        </center>
         </div>
 
       </section>
